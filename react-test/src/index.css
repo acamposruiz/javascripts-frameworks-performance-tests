@@ -1,0 +1,14 @@
+body {
+     margin: 0;
+     padding: 0;
+ }
+
+.content {
+    width: 100%;
+}
+
+.content div {
+    float: left;
+    border-radius: 122px;
+    font-size: 12.8px;
+}
