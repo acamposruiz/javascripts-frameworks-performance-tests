@@ -114,6 +114,10 @@
     padding: 23px;
 }
 
+.modal-container .counter.time {
+    color: black;
+}
+
 .modal-container .counter p {
     position: inherit;
     margin: 0px;

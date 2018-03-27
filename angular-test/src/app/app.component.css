@@ -81,7 +81,7 @@ img {
 .modal-container .controls button {
     margin: 3px;
     opacity: .9;
-    background-color: #af1111;
+    background-color: #bb2f2f;
     color: white;
     border-radius: 0px;
     padding: 14px;
@@ -106,7 +106,7 @@ img {
 
 .modal-container .modal-content .content {
     opacity: .9;
-    background-color: #af1111;
+    background-color: #bb2f2f;
     color: white;
     width: 600px;
 }
@@ -117,6 +117,10 @@ img {
     justify-content: center;
     font-size: 9em;
     padding: 23px;
+}
+
+.modal-container .counter.time {
+    color: black;
 }
 
 .modal-container .counter p {
@@ -138,7 +142,7 @@ img {
 .modal-foot button {
     margin: 3px;
     opacity: .9;
-    background-color: #af1111;
+    background-color: #bb2f2f;
     color: white;
     border-radius: 0px;
     padding: 9px;
@@ -149,6 +153,6 @@ img {
 
 .modal-foot button.active {
     background-color: white;
-    color: #af1111;
+    color: #bb2f2f;
     opacity: 1;
 }
