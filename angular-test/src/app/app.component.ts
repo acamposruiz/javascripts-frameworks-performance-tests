@@ -10,15 +10,19 @@ export class AppComponent {
   state = {
     isToggleOn: false, // On/Off state indicator
     step: 0, // Iteration step
+    extradigits: '000',
     int: undefined, // Reference to setInterval()
     mockData: [], // Where the list of elements will be store
     secondsCounter: 0,
+    elnumValue: 1000,
+    elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
     timer: undefined
   };
 
   /* Here we manage switching from initial state to running state (and the way back) when the application starts to generate data */
   switchState() {
     let mockData = this.state.mockData;
+    let extradigits = this.state.extradigits;
     let timer = this.state.timer;
     let step = this.state.step;
     let int = this.state.int;
@@ -35,14 +39,19 @@ export class AppComponent {
       }, 1000);
       /* If the application isn't running it starts to generate data */
       int = setInterval(() => {
-        if (step >= 219) {this.clear(false);}
+        /*Checking elements limit*/
+        if ((step * 10) >= this.state.elnumValue) {
+          this.clear(false);
+          return;
+        }
         step++;
+        extradigits = (step < 10) ? '00' : (step < 100) ? '0' : '';
         mockData = _.shuffle(_.range(step * 10).map((element, index) => {
           return {style: this.divStyle(), content: index};
         }));
         this.state = {
           ...this.state,
-          step, mockData, isToggleOn, int
+          step, mockData, isToggleOn, int, extradigits
         };
       }, 1);
     }
@@ -60,22 +69,28 @@ export class AppComponent {
     return {color: ramdonColor(), 'background-color': ramdonColor()};
   }
 
+  setElnumValue(elnumValue) {
+    this.clear(true);
+    this.state.elnumValue = elnumValue;
+  }
+
   /* Go back to initial state */
   clear(manual) {
+    clearInterval(this.state.timer);
     if (this.state.int) {
       clearInterval(this.state.int);
     }
     if (manual) {
-      clearInterval(this.state.timer);
       this.state = {
         ...this.state,
+        extradigits: '000',
+        step: 0,
+        mockData: [],
         secondsCounter: 0
       };
     }
     this.state = {
       ...this.state,
-      step: 0,
-      mockData: [],
       isToggleOn: false,
       int: undefined
     };

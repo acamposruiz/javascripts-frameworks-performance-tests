@@ -36,6 +36,7 @@ class App extends Component {
       }, 1000);
       /* If the application isn't running it starts to generate data */
       newState.int = setInterval(() => {
+        /*Checking elements limit*/
         if ((newState.step * 10) >= this.state.elnumValue) {
           this.clear(false);
           return;
