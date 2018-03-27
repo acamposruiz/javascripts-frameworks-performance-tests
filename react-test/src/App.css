@@ -1,21 +1,25 @@
 .App {
-  text-align: center;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    top: -83px;
+    position: relative;
+    font-size: 2em;
+    padding-bottom: 28px;
 }
 
 .App-intro {
@@ -27,38 +31,97 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
+.modal-container {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.timer-modal {
+.modal-container .modal-head {
+    margin-bottom: 8px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal-container .modal-head .logo {
+    padding-right: 26px;
+    background-color: white;
+    border-radius: 14px;
+    margin-left: 7px;
+}
+
+.modal-head img {
+    position: relative;
+    top: 31px;
+}
+
+.modal-container .controls {
+    display: flex;
+}
+
+.modal-container .controls button {
+    margin: 3px;
     opacity: .9;
     background-color: #1eafbf;
-    pointer-events: none;
-    position: absolute;
     color: white;
-    top: 35%;
-    left: 36%;
-    font-size: 14em;
+    border-radius: 14px;
+    padding: 17px;
+    font-size: 1.5em;
+}
+
+.modal-container .controls button.active {
+    background-color: white;
+    color: red;
+    opacity: 1;
+}
+
+.logo small {
+    font-size: .6em;
+}
+
+.modal-container .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal-container .modal-content .content {
+    opacity: .9;
+    background-color: #1eafbf;
+    color: white;
     border-radius: 75px;
+    width: 600px;
+}
+
+.modal-container .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 9em;
     padding: 23px;
 }
 
-.timer-modal p {
+.modal-container .counter p {
+    position: inherit;
     margin: 0px;
-    position: relative;
     padding: 0px;
-    top: -33px;
-    right: -2px;
 }
 
-.timer-modal small {
-    font-weight: bold;
-    top: 79%;
+.modal-container .counter small {
     font-size: 0.25em;
-    position: absolute;
+    margin: 0px;
     padding: 0px;
-    top: 205px;
-    right: 51px;
 }

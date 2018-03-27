@@ -71,31 +71,43 @@ class App extends Component {
   }
 
   render() {
+      var extradigits =  (this.state.step === 0)? '000': (this.state.step < 10)? '00': (this.state.step < 100)? '0':'';
     return (
-
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h1 className="App-title">Welcome to React (v. 16.2.0)</h1>
-          <button onClick={this.switchState}>
-            {this.state.isToggleOn ? 'STOP' : 'START'}
-          </button>
-          <button onClick={this.clear}>
-            CLEAR
-          </button>
-        </header>
-        <div  className="step-info">
-          <h1>{this.state.step * 10} elements</h1>
-
-        </div>
         <div className="App-intro content">
           {this.state.mockData.map(function (data, i) {
             return <div key={i} style={data.style}>{data.content}</div>
           })}
         </div>
-        <div className="timer-modal">
-          <p> {(this.state.secondsCounter < 10)? "0": ""}{this.state.secondsCounter}</p>
-          <small>seconds</small>
+        <div className="modal-container">
+              <div className="modal-head">
+                <div className="controls">
+                  <button  className={this.state.isToggleOn ? 'active' : 'no-active'} onClick={this.switchState}>
+                    {this.state.isToggleOn ? 'STOP' : 'START'}
+                  </button>
+                  <button onClick={this.clear}>
+                    CLEAR
+                  </button>
+                </div>
+                <div className="logo">
+                  <h5 className="App-title">
+                    <img src={logo} className="App-logo" alt="logo"/>
+                    React <small>(v.16.2.0)</small>
+                  </h5>
+                </div>
+              </div>
+            <div className="modal-content">
+              <div className="content">
+                <div className="counter elements">
+                  <p>{extradigits}{this.state.step * 10}</p>
+                  <small>elements</small>
+                </div>
+                <div className="counter time">
+                  <p> {`${(this.state.secondsCounter < 10) ? "0" : ""}${this.state.secondsCounter}`}</p>
+                  <small>seconds</small>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     );
