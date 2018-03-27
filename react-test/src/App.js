@@ -12,11 +12,14 @@ class App extends Component {
       mockData: [], // Where the list of elements will be store
       isToggleOn: false, // On/Off state indicator
       step: 0, // Iteration step
+      elnumValue: 1000,
+      elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
       secondsCounter: 0,
       timer: undefined
     };
     this.switchState = this.switchState.bind(this);
     this.clear = this.clear.bind(this);
+    this.setElnumValue = this.setElnumValue.bind(this);
   }
 
   /* Here we manage switching from initial state to running state (and the way back) when the application starts to generate data */
@@ -33,7 +36,10 @@ class App extends Component {
       }, 1000);
       /* If the application isn't running it starts to generate data */
       newState.int = setInterval(() => {
-        if (newState.step >= 219) this.clear(false);
+        if ((newState.step * 10) >= this.state.elnumValue) {
+          this.clear(false);
+          return;
+        }
         newState.step++;
         this.setState({
           step: newState.step,
@@ -48,13 +54,15 @@ class App extends Component {
 
   /* Go back to initial state */
   clear(manual) {
-    const newState = {mockData: [], step: 0};
+    const newState = {};
     if (this.state.int) {
       clearInterval(this.state.int);
     }
     if (manual) {
       clearInterval(this.state.timer);
       newState.secondsCounter = 0;
+      newState.mockData = [];
+      newState.step = 0;
     }
     this.setState({
       ...newState,
@@ -63,15 +71,23 @@ class App extends Component {
     });
   }
 
+  setElnumValue(elnumValue) {
+    return function () {
+      this.clear(true);
+      this.setState({elnumValue});
+    }.bind(this);
+  }
+
   divStyle() {
     function ramdonColor() {
       return _.shuffle(['red', 'cyan', 'grey', 'purple', 'black', 'blue', 'yellow', 'pink', 'orange', 'brown', 'green'])[0];
     }
+
     return {color: ramdonColor(), 'background-color': ramdonColor()};
   }
 
   render() {
-      var extradigits =  (this.state.step === 0)? '000': (this.state.step < 10)? '00': (this.state.step < 100)? '0':'';
+    var extradigits = (this.state.step === 0) ? '000' : (this.state.step < 10) ? '00' : (this.state.step < 100) ? '0' : '';
     return (
       <div className="App">
         <div className="App-intro content">
@@ -80,34 +96,40 @@ class App extends Component {
           })}
         </div>
         <div className="modal-container">
-              <div className="modal-head">
-                <div className="controls">
-                  <button  className={this.state.isToggleOn ? 'active' : 'no-active'} onClick={this.switchState}>
-                    {this.state.isToggleOn ? 'STOP' : 'START'}
-                  </button>
-                  <button onClick={this.clear}>
-                    CLEAR
-                  </button>
-                </div>
-                <div className="logo">
-                  <h5 className="App-title">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    React <small>(v.16.2.0)</small>
-                  </h5>
-                </div>
+          <div className="modal-head">
+            <div className="controls">
+              <button className={this.state.isToggleOn ? 'active' : 'no-active'} onClick={this.switchState}>
+                {this.state.isToggleOn ? 'STOP' : 'START'}
+              </button>
+              <button onClick={this.clear}>
+                CLEAR
+              </button>
+            </div>
+            <div className="logo">
+              <h5 className="App-title">
+                <img src={logo} className="App-logo" alt="logo"/>
+                React <small>(v.16.2.0)</small>
+              </h5>
+            </div>
+          </div>
+          <div className="modal-content">
+            <div className="content">
+              <div className="counter elements">
+                <p>{extradigits}{this.state.step * 10}</p>
+                <small>elements</small>
               </div>
-            <div className="modal-content">
-              <div className="content">
-                <div className="counter elements">
-                  <p>{extradigits}{this.state.step * 10}</p>
-                  <small>elements</small>
-                </div>
-                <div className="counter time">
-                  <p> {`${(this.state.secondsCounter < 10) ? "0" : ""}${this.state.secondsCounter}`}</p>
-                  <small>seconds</small>
-                </div>
+              <div className="counter time">
+                <p> {`${(this.state.secondsCounter < 10) ? "0" : ""}${this.state.secondsCounter}`}</p>
+                <small>seconds</small>
               </div>
             </div>
+          </div>
+          <div className="modal-foot">
+            {this.state.elnumOptions.map(function (elnum, i) {
+              return <button className={(this.state.elnumValue === elnum) ? 'active' : 'no-active'}
+                             onClick={this.setElnumValue(elnum)} key={i}>{elnum}</button>
+            }.bind(this))}
+          </div>
         </div>
       </div>
     );
