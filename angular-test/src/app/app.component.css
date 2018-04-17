@@ -7,9 +7,9 @@ body {
 
 
 .content div {
-    font-size: 12.8px;
+    font-size: .8rem;
     float: left;
-    border-radius: 122px;
+    border-radius: 7.625rem;
 }
 
 .step-info {
@@ -18,9 +18,9 @@ body {
 }
 
 .logo img {
-    height: 92px;
+    height: 5.75rem;
     position: relative;
-    top: 31px;
+    top: 1.9375rem;
 }
 
 .logo small {
@@ -34,21 +34,21 @@ body {
 
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+    height: 5rem;
 }
 
 .App-header {
     background-color: #222;
-    height: 150px;
-    padding: 20px;
+    height: 9.375rem;
+    padding: 1.25rem;
     color: white;
 }
 
 .App-title {
-    top: -92px;
+    top: -5.75rem;
     position: relative;
     font-size: 2em;
-    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
 }
 
 .modal-container {
@@ -61,18 +61,18 @@ body {
 }
 
 .modal-container .modal-head {
-    margin-bottom: 8px;
-    height: 80px;
+    margin-bottom: .5rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .modal-container .modal-head .logo {
-    padding-right: 26px;
+    padding-right: 1.625rem;
     background-color: white;
-    border-radius: 14px;
-    margin-left: 7px;
+    border-radius: .875rem;
+    margin-left: .4375rem;
 }
 
 .modal-container .controls {
@@ -80,12 +80,12 @@ body {
 }
 
 .modal-container .controls button {
-    margin: 3px;
+    margin: .1875rem;
     opacity: .9;
     background-color: #bb2f2f;
     color: white;
-    border-radius: 0px;
-    padding: 14px;
+    border-radius: 0rem;
+    padding: .875rem;
     font-size: 1.5em;
 }
 
@@ -105,7 +105,7 @@ body {
     opacity: .9;
     background-color: #bb2f2f;
     color: white;
-    width: 600px;
+    width: 37.5rem;
 }
 
 .modal-container .counter {
@@ -113,7 +113,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-size: 9em;
-    padding: 23px;
+    padding: 1.4375rem;
 }
 
 .modal-container .counter.time {
@@ -122,30 +122,30 @@ body {
 
 .modal-container .counter p {
     position: inherit;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .modal-container .counter small {
     font-size: 0.25em;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .modal-foot {
-    margin-top: 8px;
+    margin-top: .5rem;
 }
 
 .modal-foot button {
-    margin: 3px;
+    margin: .1875rem;
     opacity: .9;
     background-color: #bb2f2f;
     color: white;
-    border-radius: 0px;
-    padding: 9px;
+    border-radius: 0rem;
+    padding: .5625rem;
     font-size: 1.3em;
-    padding-left: 20px;
-    padding-right: 18px;
+    padding-left: 1.25rem;
+    padding-right: 1.125rem;
 }
 
 .modal-foot button.active {
@@ -153,3 +153,5 @@ body {
     color: #bb2f2f;
     opacity: 1;
 }
+
+
