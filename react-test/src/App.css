@@ -1,3 +1,4 @@
+
 .App {
     text-align: center;
     font-family: sans-serif;
@@ -5,21 +6,21 @@
 
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+    height: 5rem;
 }
 
 .App-header {
     background-color: #222;
-    height: 150px;
-    padding: 20px;
+    height: 9.375rem;
+    padding: 1.25rem;
     color: white;
 }
 
 .App-title {
-    top: -83px;
+    top: -5.1875rem;
     position: relative;
     font-size: 2em;
-    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
 }
 
 .step-info {
@@ -50,23 +51,23 @@
 }
 
 .modal-head {
-    margin-bottom: 8px;
-    height: 80px;
+    margin-bottom: 0.5rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .modal-head .logo {
-    padding-right: 26px;
+    padding-right: 1.625rem;
     background-color: white;
-    border-radius: 14px;
-    margin-left: 7px;
+    border-radius: .875rem;
+    margin-left: .4375rem;
 }
 
 .modal-head img {
     position: relative;
-    top: 31px;
+    top: 1.9374rem;
 }
 
 .modal-container .controls {
@@ -74,12 +75,12 @@
 }
 
 .modal-container .controls button {
-    margin: 3px;
+    margin: .1875rem;
     opacity: .9;
     background-color: #1eafbf;
     color: white;
-    border-radius: 14px;
-    padding: 17px;
+    border-radius: .875rem;
+    padding: 1.0625rem;
     font-size: 1.5em;
 }
 
@@ -99,8 +100,8 @@
     opacity: .9;
     background-color: #1eafbf;
     color: white;
-    border-radius: 75px;
-    width: 600px;
+    border-radius: 4.6875rem;
+    width: 37.5rem;
 }
 
 .modal-container .counter {
@@ -108,7 +109,7 @@
     flex-direction: column;
     justify-content: center;
     font-size: 9em;
-    padding: 23px;
+    padding: 1.4375rem;
 }
 
 .modal-container .counter.time {
@@ -128,12 +129,12 @@
 }
 
 .modal-foot button {
-    margin: 3px;
+    margin: .1875rem;
     opacity: .9;
     background-color: #1eafbf;
     color: white;
-    border-radius: 14px;
-    padding: 9px;
+    border-radius: .875rem;
+    padding: .5625rem;
     font-size: 1.3em;
 }
 
