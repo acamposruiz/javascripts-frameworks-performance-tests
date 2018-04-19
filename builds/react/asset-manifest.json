@@ -3,5 +3,5 @@
   "main.css.map": "static/css/main.dafb43a8.css.map",
   "main.js": "static/js/main.f28f9f5e.js",
   "main.js.map": "static/js/main.f28f9f5e.js.map",
-  "js-frameworks-tests/builds/react/static/media/logo.svg": "js-frameworks-tests/builds/react/static/media/logo.5d5d9eef.svg"
+  "static/media/logo.svg": "js-frameworks-tests/builds/react/static/media/logo.5d5d9eef.svg"
 }
