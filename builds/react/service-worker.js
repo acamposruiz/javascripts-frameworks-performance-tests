@@ -1,5 +1,5 @@
 "use strict";
-var precacheConfig = [["/index.html", "fdcc71ade061b13b273e86ac73ef1eae"], ["/static/css/main.dafb43a8.css", "f539d967e82cf6da508ab733deda2351"], ["/static/js/main.f28f9f5e.js", "070b33361d9bb2a546b0e6a65a173dfe"], ["/static/media/logo.5d5d9eef.svg", "5d5d9eefa31e5e13a6610d9fa7a283bb"]],
+var precacheConfig = [["/index.html", "fdcc71ade061b13b273e86ac73ef1eae"], ["/static/css/main.dafb43a8.css", "f539d967e82cf6da508ab733deda2351"], ["/static/js/main.f28f9f5e.js", "070b33361d9bb2a546b0e6a65a173dfe"], ["/js-frameworks-tests/builds/react/static/media/logo.5d5d9eef.svg", "5d5d9eefa31e5e13a6610d9fa7a283bb"]],
   cacheName = "sw-precache-v3-sw-precache-webpack-plugin-" + (self.registration ? self.registration.scope : ""),
   ignoreUrlParametersMatching = [/^utm_/], addDirectoryIndex = function (e, t) {
     var n = new URL(e);
