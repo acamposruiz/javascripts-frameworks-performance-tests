@@ -1,7 +1,7 @@
 {
-  "main.css": "static/css/main.ed6a07ba.css",
-  "main.css.map": "static/css/main.ed6a07ba.css.map",
-  "main.js": "static/js/main.f28f9f5e.js",
-  "main.js.map": "static/js/main.f28f9f5e.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "js-frameworks-tests/builds/react/static/css/main.ed6a07ba.css",
+  "main.css.map": "js-frameworks-tests/builds/react/static/css/main.ed6a07ba.css.map",
+  "main.js": "js-frameworks-tests/builds/react/static/js/main.f28f9f5e.js",
+  "main.js.map": "js-frameworks-tests/builds/react/static/js/main.f28f9f5e.js.map",
+  "static/media/logo.svg": "js-frameworks-tests/builds/react/static/media/logo.5d5d9eef.svg"
 }
