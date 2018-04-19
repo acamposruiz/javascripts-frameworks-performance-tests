@@ -144,6 +144,10 @@
     opacity: 1;
 }
 
+.controls button.no-active {
+    background-color: #134e54;
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 13px;
