@@ -1,14 +1,25 @@
-.react {
+.reactjs {
     background-color: blue;
 }
 .angular {
     background-color: red;
 }
-.vue {
+.vuejs {
     background-color: #6dff4f;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.app-container {
+    top: 4rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    height:1rem;
 }
