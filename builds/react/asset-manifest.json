@@ -1,8 +1,9 @@
 {
-  "main.css": "/js-frameworks-tests/builds/react/static/css/main.5e816e32.css",
-  "main.css.map": "/js-frameworks-tests/builds/react/static/css/main.5e816e32.css.map",
-  "main.js": "/js-frameworks-tests/builds/react/static/js/main.318d4f52.js",
-  "main.js.map": "/js-frameworks-tests/builds/react/static/js/main.318d4f52.js.map",
+  "main.css": "/js-frameworks-tests/builds/react/static/css/main.2b9333b4.css",
+  "main.css.map": "/js-frameworks-tests/builds/react/static/css/main.2b9333b4.css.map",
+  "main.js": "/js-frameworks-tests/builds/react/static/js/main.88de6bc2.js",
+  "main.js.map": "/js-frameworks-tests/builds/react/static/js/main.88de6bc2.js.map",
+  "static/media/back.svg": "/js-frameworks-tests/builds/react/static/media/back.290174b6.svg",
   "static/media/github-icon.svg": "/js-frameworks-tests/builds/react/static/media/github-icon.2b8bb9ed.svg",
   "static/media/logo.svg": "/js-frameworks-tests/builds/react/static/media/logo.5d5d9eef.svg"
 }
