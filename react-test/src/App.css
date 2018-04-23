@@ -162,6 +162,19 @@
 }
 
 
+.back-container {
+    float: left;
+    padding: 2rem;
+}
+
+.back-container .back-link {
+
+}
+
+.back-container .back-link img {
+    width: 5rem;
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 13px;

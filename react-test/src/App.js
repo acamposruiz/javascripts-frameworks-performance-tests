@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import logoGithub from './github-icon.svg';
+import backIcon from './back.svg';
 import './App.css';
 
 
@@ -137,6 +138,11 @@ class App extends Component {
               <img className="img-social" alt="Github" src={logoGithub}/> <span>View source code</span>
             </a>
           </div>
+        </div>
+        <div className="back-container">
+          <a title="Go back" className="back-link" href="https://acamposruiz.github.io/js-frameworks-tests/builds/home/index.html">
+            <img className="img-social" alt="Github" src={backIcon}/>
+          </a>
         </div>
       </div>
     );
