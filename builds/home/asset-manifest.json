@@ -3,7 +3,7 @@
   "main.css.map": "static/css/main.0ebc2636.css.map",
   "main.js": "static/js/main.d8192cbc.js",
   "main.js.map": "static/js/main.d8192cbc.js.map",
-  "static/media/angular.svg": "/js-frameworks-tests/builds/home/static/media/angular.97dbd672.svg",
-  "static/media/github-icon.svg": "/js-frameworks-tests/builds/home/static/media/github-icon.2b8bb9ed.svg",
-  "static/media/logo.svg": "/js-frameworks-tests/builds/home/static/media/logo.e0539df5.svg"
+  "static/media/angular.svg": "static/media/angular.97dbd672.svg",
+  "static/media/github-icon.svg": "static/media/github-icon.2b8bb9ed.svg",
+  "static/media/logo.svg": "static/media/logo.e0539df5.svg"
 }
