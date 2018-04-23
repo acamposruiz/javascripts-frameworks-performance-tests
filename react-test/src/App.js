@@ -14,7 +14,7 @@ class App extends Component {
       mockData: [], // Where the list of elements will be store
       isToggleOn: false, // On/Off state indicator
       step: 0, // Iteration step
-      elnumValue: 1000,
+      elnumValue: 1500,
       elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
       secondsCounter: 0,
       timer: undefined
