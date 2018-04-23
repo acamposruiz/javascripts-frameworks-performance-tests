@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import logoReact from './logo.svg';
+import logoReact from './react.svg';
 import logoAngular from './angular.svg';
 import logoGithub from './github-icon.svg';
 import './App.css';
