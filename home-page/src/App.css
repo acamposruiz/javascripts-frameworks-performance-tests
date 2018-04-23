@@ -1,25 +1,33 @@
-.reactjs {
-    background-color: blue;
-}
-.angular {
-    background-color: red;
-}
-.vuejs {
-    background-color: #6dff4f;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.app-container {
-    top: 4rem;
-    position: fixed;
-    height: 100%;
-    width: 100%;
+.angular-logo {
+    width: 90%;
 }
 
 .title {
-    height:1rem;
+    background-color: #e4e4e4;
+    font-style: italic;
+    padding: 4rem;
 }
+
+.subtitle {
+    color: #676767;
+}
+
+.option {
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+.link-text {
+    margin-bottom: 1.5rem;
+    color: dimgrey;
+    text-align: center;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+hr.line {
+    color: black;
+}
+
