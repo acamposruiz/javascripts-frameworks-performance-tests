@@ -158,3 +158,16 @@ body {
     color: #bb2f2f;
     opacity: 1;
 }
+
+.social {
+    color: grey;
+    padding: 2rem;
+    display: inline-block;
+}
+
+.img-social {
+    top: .5rem;
+    opacity: .7;
+    width: 2rem;
+    position: relative;
+}
