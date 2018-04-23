@@ -38,6 +38,7 @@ class App extends Component {
 
   render() {
     const md = parseInt(12/this.state.frameworks.length, 10);
+    const lg = md-2;
     const sm = "12";
 
     return (
@@ -51,7 +52,7 @@ class App extends Component {
         </div>
         <div className="row app-container">
           {this.state.frameworks.map(function (fm, i) {
-            return <a key={i} href={fm.path} className={`${fm.name.toLowerCase()} col-sm-${sm} col-md-${md} option`}>
+            return <a key={i} href={fm.path} className={`${fm.name.toLowerCase()} col-sm-${sm} col-md-${md}  col-lg-${lg} option`}>
               <h3 className="link-text">{fm.name}</h3>
               {this.logo(fm.key)}
             </a>
