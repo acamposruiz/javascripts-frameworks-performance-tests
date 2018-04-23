@@ -134,7 +134,7 @@ class App extends Component {
           </div>
           <div className="info">
             <a target="_blank" className="social github-icon" href="https://github.com/acamposruiz/js-frameworks-tests/blob/master/react-test/src/App.js">
-              <img className="img-social" alt="Github home page" src={logoGithub}/> <span>View source code here</span>
+              <img className="img-social" alt="Github" src={logoGithub}/> <span>View source code</span>
             </a>
           </div>
         </div>
