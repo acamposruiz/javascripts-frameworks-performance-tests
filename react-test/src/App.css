@@ -148,6 +148,20 @@
     background-color: #134e54;
 }
 
+.social {
+    color: grey;
+    padding: 2rem;
+    display: inline-block;
+}
+
+.img-social {
+    top: .5rem;
+    opacity: .7;
+    width: 2rem;
+    position: relative;
+}
+
+
 @media (max-width: 1200px) {
     html {
         font-size: 13px;

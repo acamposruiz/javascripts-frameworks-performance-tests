@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, {Component} from 'react';
 import logo from './logo.svg';
+import logoGithub from './github-icon.svg';
 import './App.css';
 
 
@@ -130,6 +131,11 @@ class App extends Component {
               return <button className={(this.state.elnumValue === elnum) ? 'active' : 'no-active'}
                              onClick={this.setElnumValue(elnum)} key={i}>{elnum}</button>
             }.bind(this))}
+          </div>
+          <div className="info">
+            <a target="_blank" className="social github-icon" href="https://github.com/acamposruiz/js-frameworks-tests/blob/master/react-test/src/App.js">
+              <img className="img-social" alt="Github home page" src={logoGithub}/> <span>View source code here</span>
+            </a>
           </div>
         </div>
       </div>
