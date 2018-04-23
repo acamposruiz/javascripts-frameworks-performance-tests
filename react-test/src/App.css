@@ -148,10 +148,22 @@
     background-color: #134e54;
 }
 
+.info {
+
+}
+
 .social {
     color: grey;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1rem;
     display: inline-block;
+    opacity: .9;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.social:hover {
+    opacity: 1;
 }
 
 .img-social {
