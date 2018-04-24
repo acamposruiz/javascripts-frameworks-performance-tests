@@ -53,6 +53,15 @@ class App extends Component {
             <h1>Javascript Framework Performance Tests</h1>
             <h5 className="subtitle">Go ahead to check the performance by select one</h5>
           <hr  className="line"/>
+            <p className="description">
+              This is a personal approach to check the performance of the most popular javascript frameworks in the market nowadays.
+              So you are able to check in your own, and by the device of your election, the amount of time each framework takes to finish the same operation.
+              The operation developed here is just move divs around. The quatity of divs grows along the time.
+            </p>
+            <p className="description">
+              You can select how many items you want the framework to move, then you get the time this particular framework need to accomplish
+              the task and you can compare  the result of differents frameworks in the same device.
+            </p>
           </div>
         </div>
         <div className="row app-container">
