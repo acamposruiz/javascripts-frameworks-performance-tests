@@ -1,9 +1,9 @@
 {
-  "main.css": "/js-frameworks-tests/builds/react/static/css/main.0ebc2636.css",
-  "main.css.map": "/js-frameworks-tests/builds/react/static/css/main.0ebc2636.css.map",
-  "main.js": "/js-frameworks-tests/builds/react/static/js/main.ff282749.js",
-  "main.js.map": "/js-frameworks-tests/builds/react/static/js/main.ff282749.js.map",
-  "static/media/angular.svg": "/js-frameworks-tests/builds/react/static/media/angular.97dbd672.svg",
-  "static/media/github-icon.svg": "/js-frameworks-tests/builds/react/static/media/github-icon.2b8bb9ed.svg",
-  "static/media/react.svg": "/js-frameworks-tests/builds/react/static/media/react.e0539df5.svg"
+  "main.css": "/js-frameworks-tests/builds/home/static/css/main.0ebc2636.css",
+  "main.css.map": "/js-frameworks-tests/builds/home/static/css/main.0ebc2636.css.map",
+  "main.js": "/js-frameworks-tests/builds/home/static/js/main.ff282749.js",
+  "main.js.map": "/js-frameworks-tests/builds/home/static/js/main.ff282749.js.map",
+  "static/media/angular.svg": "/js-frameworks-tests/builds/home/static/media/angular.97dbd672.svg",
+  "static/media/github-icon.svg": "/js-frameworks-tests/builds/home/static/media/github-icon.2b8bb9ed.svg",
+  "static/media/react.svg": "/js-frameworks-tests/builds/home/static/media/react.e0539df5.svg"
 }
