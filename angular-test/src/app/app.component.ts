@@ -14,7 +14,7 @@ export class AppComponent {
     int: undefined, // Reference to setInterval()
     mockData: [], // Where the list of elements will be store
     secondsCounter: 0,
-    elnumValue: 1000,
+    elnumValue: 1500,
     elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
     timer: undefined
   };
