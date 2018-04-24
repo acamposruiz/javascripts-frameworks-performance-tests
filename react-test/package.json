@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "easytimer.js": "^2.2.1",
+    "fs": "0.0.1-security",
     "lodash": "^4.17.5",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "^1.1.1",
-    "replace-in-file": "^3.4.0"
+    "replace-in-file": "^3.4.0",
+    "underscore": "^1.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
