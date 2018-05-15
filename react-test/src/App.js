@@ -5,6 +5,8 @@ import logoGithub from './github-icon.svg';
 import backIcon from './back.svg';
 import './App.css';
 
+const REACT_VERSION = React.version;
+
 
 class App extends Component {
 
@@ -111,7 +113,7 @@ class App extends Component {
             <div className="logo">
               <h5 className="App-title">
                 <img src={logo} className="App-logo" alt="logo"/>
-                React <small>(v.16.2.0)</small>
+                React <small>(v.{REACT_VERSION})</small>
               </h5>
             </div>
           </div>
