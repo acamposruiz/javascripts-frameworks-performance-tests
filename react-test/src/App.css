@@ -138,13 +138,13 @@
     font-size: 1.3em;
 }
 
-.modal-foot button.active {
+.modal-foot button.no-active {
     background-color: white;
     color: #1eafbf;
     opacity: 1;
 }
 
-.controls button.no-active {
+.controls button.active {
     background-color: #134e54;
 }
 
