@@ -89,15 +89,7 @@ body {
     font-size: 1.5em;
 }
 
-.modal-container .controls button.no-active {
-    background-color: white;
-    color: red;
-    opacity: 1;
-}
 
-.modal-container .controls button.active {
-    background-color: #25277b;
-}
 
 
 .modal-container .modal-content {
@@ -144,8 +136,8 @@ body {
 .modal-foot button {
     margin: .1875rem;
     opacity: .9;
-    background-color: #bb2f2f;
-    color: white;
+    background-color: white;
+    color: #bb2f2f;
     border-radius: 0rem;
     padding: .5625rem;
     font-size: 1.3em;
@@ -154,8 +146,8 @@ body {
 }
 
 .modal-foot button.active {
-    background-color: white;
-    color: #bb2f2f;
+    background-color: #bb2f2f;
+    color: white;
     opacity: 1;
 }
 
