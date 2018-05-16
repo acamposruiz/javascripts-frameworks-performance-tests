@@ -131,20 +131,20 @@
 .modal-foot button {
     margin: .1875rem;
     opacity: .9;
-    background-color: #1eafbf;
-    color: white;
+    background-color: white;
+    color: #1eafbf;
     border-radius: .875rem;
     padding: .5625rem;
     font-size: 1.3em;
 }
 
-.modal-foot button.no-active {
-    background-color: white;
-    color: #1eafbf;
+.modal-foot button.active {
+    background-color: #1eafbf;
+    color: white;
     opacity: 1;
 }
 
-.controls button.active {
+.controls button.no-active {
     background-color: #134e54;
 }
 
