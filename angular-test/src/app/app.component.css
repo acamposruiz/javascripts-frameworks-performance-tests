@@ -89,7 +89,15 @@ body {
     font-size: 1.5em;
 }
 
+.modal-container .controls button.active {
+    background-color: white;
+    color: red;
+    opacity: 1;
+}
 
+.modal-container .controls button.no-active {
+    background-color: #25277b;
+}
 
 
 .modal-container .modal-content {
