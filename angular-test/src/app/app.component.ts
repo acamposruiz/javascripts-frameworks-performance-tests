@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, VERSION} from '@angular/core';
 import * as _ from "lodash";
 
 @Component({
@@ -8,6 +8,7 @@ import * as _ from "lodash";
 })
 export class AppComponent {
   state = {
+    ngVersion: VERSION.full,
     isToggleOn: false, // On/Off state indicator
     step: 0, // Iteration step
     extradigits: '000',
