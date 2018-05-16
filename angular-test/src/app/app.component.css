@@ -156,7 +156,12 @@ body {
 .modal-foot button.active {
     background-color: #bb2f2f;
     color: white;
-    opacity: 1;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    top: -.7rem;
+    position: relative;
+    border: 0px;
+    font-size: 1.6rem;
 }
 
 .social {

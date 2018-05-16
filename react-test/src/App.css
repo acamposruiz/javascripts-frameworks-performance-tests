@@ -141,7 +141,11 @@
 .modal-foot button.active {
     background-color: #1eafbf;
     color: white;
-    opacity: 1;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    top: -.3rem;
+    position: relative;
+    border: 0px;
 }
 
 .controls button.no-active {
