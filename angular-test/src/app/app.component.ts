@@ -1,5 +1,6 @@
 import {Component, VERSION} from '@angular/core';
 import * as _ from "lodash";
+import {ELEMENTS_INITIAL_STATE, ELEMENTS_OPTIONS, ELEMENTS_COLORS} from "../constants"
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,8 @@ export class AppComponent {
     int: undefined, // Reference to setInterval()
     mockData: [], // Where the list of elements will be store
     secondsCounter: 0,
-    elnumValue: 1500,
-    elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
+    elnumValue: ELEMENTS_INITIAL_STATE,
+    elnumOptions: ELEMENTS_OPTIONS,
     timer: undefined
   };
 
@@ -64,7 +65,7 @@ export class AppComponent {
 
   divStyle() {
     function ramdonColor() {
-      return _.shuffle(['red', 'cyan', 'grey', 'purple', 'black', 'blue', 'yellow', 'pink', 'orange', 'brown', 'green'])[0];
+      return _.shuffle(ELEMENTS_COLORS)[0];
     }
 
     return {color: ramdonColor(), 'background-color': ramdonColor()};

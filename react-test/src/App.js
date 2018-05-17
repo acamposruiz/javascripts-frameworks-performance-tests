@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import logoGithub from './github-icon.svg';
 import backIcon from './back.svg';
 import './App.css';
+import {ELEMENTS_INITIAL_STATE, ELEMENTS_OPTIONS, ELEMENTS_COLORS} from "./constants"
 
 const REACT_VERSION = React.version;
 
@@ -16,8 +17,8 @@ class App extends Component {
       mockData: [], // Where the list of elements will be store
       isToggleOn: false, // On/Off state indicator
       step: 0, // Iteration step
-      elnumValue: 1500,
-      elnumOptions: [500, 1000, 1500, 3000, 5000, 10000],
+      elnumValue: ELEMENTS_INITIAL_STATE,
+      elnumOptions: ELEMENTS_OPTIONS,
       secondsCounter: 0,
       timer: undefined
     };
@@ -85,7 +86,7 @@ class App extends Component {
 
   divStyle() {
     function ramdonColor() {
-      return _.shuffle(['red', 'cyan', 'grey', 'purple', 'black', 'blue', 'yellow', 'pink', 'orange', 'brown', 'green'])[0];
+      return _.shuffle(ELEMENTS_COLORS)[0];
     }
 
     return {color: ramdonColor(), 'background-color': ramdonColor()};
