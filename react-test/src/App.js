@@ -1,13 +1,8 @@
 import _ from 'lodash';
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import logoGithub from './github-icon.svg';
-import backIcon from './back.svg';
+import {AppComponent} from './AppComponent';
 import './App.css';
 import {ELEMENTS_INITIAL_STATE, ELEMENTS_OPTIONS, ELEMENTS_COLORS} from "./constants"
-
-const REACT_VERSION = React.version;
-
 
 class App extends Component {
 
@@ -93,62 +88,27 @@ class App extends Component {
   }
 
   render() {
-    var extradigits = (this.state.step === 0) ? '000' : (this.state.step < 10) ? '00' : (this.state.step < 100) ? '0' : '';
-    return (
-      <div className="App">
-        <div className="App-intro content">
-          {this.state.mockData.map(function (data, i) {
-            return <div key={i} style={data.style}>{data.content}</div>
-          })}
-        </div>
-        <div className="modal-container">
-          <div className="modal-head">
-            <div className="controls">
-              <button className={this.state.isToggleOn ? 'active' : 'no-active'} onClick={this.switchState}>
-                {this.state.isToggleOn ? 'STOP' : 'START'}
-              </button>
-              <button onClick={this.clear}>
-                CLEAR
-              </button>
-            </div>
-            <div className="logo">
-              <h5 className="App-title">
-                <img src={logo} className="App-logo" alt="logo"/>
-                React <small>(v.{REACT_VERSION})</small>
-              </h5>
-            </div>
-          </div>
-          <div className="modal-content">
-            <div className="content">
-              <div className="counter elements">
-                <p>{extradigits}{this.state.step * 10}</p>
-                <small>elements</small>
-              </div>
-              <div className="counter time">
-                <p> {`${(this.state.secondsCounter < 10) ? "0" : ""}${this.state.secondsCounter}`}</p>
-                <small>seconds</small>
-              </div>
-            </div>
-          </div>
-          <div className="modal-foot">
-            {this.state.elnumOptions.map(function (elnum, i) {
-              return <button className={(this.state.elnumValue === elnum) ? 'active' : 'no-active'}
-                             onClick={this.setElnumValue(elnum)} key={i}>{elnum}</button>
-            }.bind(this))}
-          </div>
-          <div className="info">
-            <a target="_blank" className="social github-icon" href="https://github.com/acamposruiz/js-frameworks-tests/blob/master/react-test/src/App.js">
-              <img className="img-social" alt="Github" src={logoGithub}/> <span>View source code</span>
-            </a>
-          </div>
-        </div>
-        <div className="back-container">
-          <a title="Go back" className="back-link" href="https://acamposruiz.github.io/js-frameworks-tests/builds/home/index.html">
-            <img className="img-social" alt="Github" src={backIcon}/>
-          </a>
-        </div>
-      </div>
-    );
+    const extradigits = (this.state.step === 0) ? '000' : (this.state.step < 10) ? '00' : (this.state.step < 100) ? '0' : '';
+    const items = this.state.mockData.map(function (data, i) {
+      return <div key={i} style={data.style}>{data.content}</div>
+    });
+    const controls = {
+      toggleButton: (<button className={this.state.isToggleOn ? 'active' : 'no-active'} onClick={this.switchState}>
+        {this.state.isToggleOn ? 'STOP' : 'START'}
+      </button>),
+      clearButton: (<button onClick={this.clear}>
+        CLEAR
+      </button>)
+    };
+    const result = {
+      elements: `${extradigits}${this.state.step * 10}`,
+      time: `${(this.state.secondsCounter < 10) ? "0" : ""}${this.state.secondsCounter}`,
+    };
+    const selectMaxItems = this.state.elnumOptions.map(function (elnum, i) {
+      return <button className={(this.state.elnumValue === elnum) ? 'active' : 'no-active'}
+                     onClick={this.setElnumValue(elnum)} key={i}>{elnum}</button>
+    }.bind(this));
+    return <AppComponent items={items} controls={controls} result={result} selectMaxItems={selectMaxItems}/>;
   }
 }
 
