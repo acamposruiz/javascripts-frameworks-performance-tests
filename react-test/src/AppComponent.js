@@ -45,13 +45,13 @@ export function AppComponent({
           {selectMaxItems}
         </div>
         <div className="info">
-          <a target="_blank" className="social github-icon" href="https://github.com/acamposruiz/js-frameworks-tests/blob/master/react-test/src/App.js">
+          <a target="_blank" className="social github-icon" href="https://github.com/acamposruiz/toyJsTests/blob/master/react-test/src/App.js">
             <img className="img-social" alt="Github" src={logoGithub}/> <span>View source code</span>
           </a>
         </div>
       </div>
       <div className="back-container">
-        <a title="Go back" className="back-link" href="https://acamposruiz.github.io/js-frameworks-tests/builds/home/index.html">
+        <a title="Go back" className="back-link" href="https://acamposruiz.github.io/toyJsTests/builds/home/index.html">
           <img className="img-social" alt="Github" src={backIcon}/>
         </a>
       </div>

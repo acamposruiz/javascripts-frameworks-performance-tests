@@ -14,12 +14,12 @@ class App extends Component {
         {
           key: "react_js",
           name: "ReactJs",
-          path: "https://acamposruiz.github.io/js-frameworks-tests/builds/react"
+          path: "https://acamposruiz.github.io/toyJsTests/builds/react"
         },
         {
           key: "angular",
           name: "Angular",
-          path: "https://acamposruiz.github.io/js-frameworks-tests/builds/angular"
+          path: "https://acamposruiz.github.io/toyJsTests/builds/angular"
         }
       ]
     };
@@ -42,7 +42,7 @@ class App extends Component {
     const lg = md-2;
     const sm = "12";
     const github = {
-      path: "http://github.com/acamposruiz/js-frameworks-tests"
+      path: "http://github.com/acamposruiz/toyJsTests"
     };
 
     return (
