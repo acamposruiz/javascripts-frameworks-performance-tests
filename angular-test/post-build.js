@@ -8,7 +8,7 @@ const options = [
 
     //Replacement to make (string or regex)
     from: /<base href="\/">/g,
-    to: '<base href="/toyJsTests/builds/angular/">',
+    to: '<base href="/jsTestsByGamming/builds/angular/">',
   }
 ];
 

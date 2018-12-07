@@ -4,10 +4,10 @@ This is a personal approach to check the performance of the most popular javascr
 
 You can select how many items you want the framework to move, then you get the time this particular framework needs to accomplish the task. You can compare the time each framework takes to accomplish the same task.
 
-[Home](https://acamposruiz.github.io/toyJsTests/builds/home/index.html)
+[Home](https://acamposruiz.github.io/jsTestsByGamming/builds/home/index.html)
 
 ### Frameworks tested
 #### ReactJs
-[Go React Page](https://acamposruiz.github.io/toyJsTests/builds/react/)
+[Go React Page](https://acamposruiz.github.io/jsTestsByGamming/builds/react/)
 #### Angular
-[Go Angular Page](https://acamposruiz.github.io/toyJsTests/builds/angular/)
+[Go Angular Page](https://acamposruiz.github.io/jsTestsByGamming/builds/angular/)

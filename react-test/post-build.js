@@ -8,7 +8,7 @@ const options = [
 
     //Replacement to make (string or regex)
     from: /: "static/g,
-    to: ': "/toyJsTests/builds/react/static',
+    to: ': "/jsTestsByGamming/builds/react/static',
   },
   {
     //Single file
@@ -21,7 +21,7 @@ const options = [
 
     //Replacement to make (string or regex)
     from: /static/g,
-    to: 'toyJsTests/builds/react/static',
+    to: 'jsTestsByGamming/builds/react/static',
   },
   {
     //Single file
@@ -31,7 +31,7 @@ const options = [
 
     //Replacement to make (string or regex)
     from: /\.\.\/static/g,
-    to: 'toyJsTests/builds/react/static',
+    to: 'jsTestsByGamming/builds/react/static',
   }
 ];
 

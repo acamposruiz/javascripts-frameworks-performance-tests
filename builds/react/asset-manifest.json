@@ -1,9 +1,9 @@
 {
-  "main.css": "/toyJsTests/builds/react/static/css/main.0d9b00d5.css",
-  "main.css.map": "/toyJsTests/builds/react/static/css/main.0d9b00d5.css.map",
-  "main.js": "/toyJsTests/builds/react/static/js/main.1efc35de.js",
-  "main.js.map": "/toyJsTests/builds/react/static/js/main.1efc35de.js.map",
-  "static/media/back.svg": "/toyJsTests/builds/react/static/media/back.290174b6.svg",
-  "static/media/github-icon.svg": "/toyJsTests/builds/react/static/media/github-icon.2b8bb9ed.svg",
-  "static/media/logo.svg": "/toyJsTests/builds/react/static/media/logo.5d5d9eef.svg"
+  "main.css": "/jsTestsByGamming/builds/react/static/css/main.0d9b00d5.css",
+  "main.css.map": "/jsTestsByGamming/builds/react/static/css/main.0d9b00d5.css.map",
+  "main.js": "/jsTestsByGamming/builds/react/static/js/main.eca1a2db.js",
+  "main.js.map": "/jsTestsByGamming/builds/react/static/js/main.eca1a2db.js.map",
+  "static/media/back.svg": "/jsTestsByGamming/builds/react/static/media/back.290174b6.svg",
+  "static/media/github-icon.svg": "/jsTestsByGamming/builds/react/static/media/github-icon.2b8bb9ed.svg",
+  "static/media/logo.svg": "/jsTestsByGamming/builds/react/static/media/logo.5d5d9eef.svg"
 }
