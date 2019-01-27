@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import logoVue from './vue.svg';
 import logoReact from './react.svg';
 import logoAngular from './angular.svg';
 import logoGithub from './github-icon.svg';
@@ -20,6 +21,11 @@ class App extends Component {
           key: "angular",
           name: "Angular",
           path: "https://acamposruiz.github.io/jsTestsByGamming/builds/angular"
+        },
+        {
+          key: "vue",
+          name: "Vue",
+          path: "https://acamposruiz.github.io/jsTestsByGamming/builds/vue"
         }
       ]
     };
@@ -28,6 +34,8 @@ class App extends Component {
   logo(key) {
     console.log(key);
     switch (key) {
+      case "vue":
+        return <img src={logoVue} className="vue-logo logo-ico" alt={`logo ${key}`}/>;
       case "react_js":
         return <img src={logoReact} className="react-logo logo-ico" alt={`logo ${key}`}/>;
       case "angular":
