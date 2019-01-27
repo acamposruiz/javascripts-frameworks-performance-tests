@@ -67,9 +67,7 @@
     name: 'app',
     computed: {
       elements: (self = this) => {
-        const extraDigits = (self.step === 0) ? '000' : (self.step < 10) ? '00' : (self.step <
-          100) ? '0' : '';
-        return `${extraDigits}${self.step * 10}`;
+        return `${self.extraDigits}${self.step * 10}`;
       },
       time: (self = this) => `${(self.secondsCounter < 10) ? "0" : ""}${self.secondsCounter}`,
       toggleButton: (self = this) => ({
@@ -85,6 +83,7 @@
       },
       switchState() {
         const self = this;
+        let secondsCounter = 0;
         self.isToggleOn = !self.isToggleOn;
         /* If the application is already running will gets stopped */
         if (self.int) {
@@ -93,7 +92,7 @@
           clearInterval(self.timer);
         } else {
           self.timer = setInterval(() => {
-            self.secondsCounter += 1;
+            secondsCounter += 1;
           }, 1000);
           /* If the application isn't running it starts to generate data */
           self.int = setInterval(() => {
@@ -102,9 +101,13 @@
               self.clear(false);
               return;
             }
+            const step = self.step + 1;
             Object.assign(self, {
-              step: self.step + 1,
-              mockData: _.shuffle(_.range(self.step * 10).map((element, index) => {
+              secondsCounter,
+              step,
+              extraDigits: (step === 0) ? '000' : (step < 10) ? '00' : (step <
+                100) ? '0' : '',
+              mockData: _.shuffle(_.range(step * 10).map((element, index) => {
                 return {style: self.divStyle(), content: index};
               }))
             });
@@ -145,6 +148,7 @@
         mockData: [], // Where the list of elements will be store
         isToggleOn: false, // On/Off state indicator
         step: 0, // Iteration step
+        extraDigits: '000', // Iteration step
         elnumValue: ELEMENTS_INITIAL_STATE,
         elnumOptions: ELEMENTS_OPTIONS,
         secondsCounter: 0,
