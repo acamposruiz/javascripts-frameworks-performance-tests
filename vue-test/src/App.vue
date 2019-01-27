@@ -118,11 +118,11 @@
       },
       clear(manual) {
         const self = this;
+        clearInterval(self.timer);
         if (self.int) {
           clearInterval(self.int);
         }
         if (manual) {
-          clearInterval(self.timer);
           Object.assign(self, {
             secondsCounter: 0,
             mockData: [],
@@ -219,16 +219,18 @@
     background-color: white;
     border-radius: .400rem;
     margin-left: .4375rem;
+    padding: .5rem;
   }
 
   .modal-head img {
     position: relative;
     top: 1.9374rem;
-    width: 2.4em;
+    width: 2em;
   }
 
   .modal-container .controls {
     display: flex;
+    margin-right: 5rem;
   }
 
   .modal-container .controls button {
