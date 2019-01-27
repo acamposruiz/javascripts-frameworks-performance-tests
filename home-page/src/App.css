@@ -2,6 +2,10 @@
     width: 90%;
 }
 
+.vue-logo {
+    width: 100%;
+}
+
 .title {
     background-color: #e4e4e4;
     font-style: italic;
