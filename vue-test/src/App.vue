@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="App-intro content">
-      <div v-for="(item, i) in mockData"  :key="i" :style="item.style">{{item.content}}</div>
+      <div v-for="(item, i) in mockData" :key="i" :style="item.style">{{item.content}}</div>
     </div>
     <div class="modal-container">
       <div class="modal-head">
@@ -102,10 +102,12 @@
               self.clear(false);
               return;
             }
-            self.step++;
-            self.mockData = _.shuffle(_.range(self.step * 10).map((element, index) => {
-              return {style: self.divStyle(), content: index};
-            }));
+            Object.assign(self, {
+              step: self.step + 1,
+              mockData: _.shuffle(_.range(self.step * 10).map((element, index) => {
+                return {style: self.divStyle(), content: index};
+              }))
+            });
           }, 1);
         }
       },
