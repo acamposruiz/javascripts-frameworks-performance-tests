@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -p 8080",
-    "build": "ng build --prod && node ./post-build.js",
+    "build": "ng build --prod",
+    "publish": "ng build --prod && node ./post-build.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
