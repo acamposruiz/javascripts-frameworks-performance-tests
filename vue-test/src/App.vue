@@ -67,7 +67,9 @@
     name: 'app',
     computed: {
       elements: (self = this) => {
-        return `${self.extraDigits}${self.step * 10}`;
+        const extraDigits = (self.step === 0) ? '000' : (self.step < 10) ? '00' : (self.step <
+          100) ? '0' : '';
+        return `${extraDigits}${self.step * 10}`;
       },
       time: (self = this) => `${(self.secondsCounter < 10) ? "0" : ""}${self.secondsCounter}`,
       toggleButton: (self = this) => ({
@@ -105,8 +107,6 @@
             Object.assign(self, {
               secondsCounter,
               step,
-              extraDigits: (step === 0) ? '000' : (step < 10) ? '00' : (step <
-                100) ? '0' : '',
               mockData: _.shuffle(_.range(step * 10).map((element, index) => {
                 return {style: self.divStyle(), content: index};
               }))
@@ -148,7 +148,6 @@
         mockData: [], // Where the list of elements will be store
         isToggleOn: false, // On/Off state indicator
         step: 0, // Iteration step
-        extraDigits: '000', // Iteration step
         elnumValue: ELEMENTS_INITIAL_STATE,
         elnumOptions: ELEMENTS_OPTIONS,
         secondsCounter: 0,
